@@ -3,8 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
     <h1>Hello Vue</h1>
+    <div id="app">
+        <div v-if="show">
+            <p>{{ title }} - {{ name }} - {{ age }}</p>
+            <button v-on:click="title = 'Dog'">change title</button>
+            <button v-on:click="age++">Inc Age</button>
+            <button v-on:click="age--">Dec Age</button>
+            <button @click="addAge(10)">From App 10</button>
+            </div>
+        <p>
+            <button @click="showContent" v-if="show">Hide Content</button>
+            <button @click="showContent" v-else>Show Content</button>
+        </p>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
