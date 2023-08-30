@@ -5,7 +5,9 @@ const app = Vue.createApp({
             title: "Vue counter",
             name: "Dagim",
             age: 22,
-            show: true
+            show: true,
+            x: 0,
+            y: 0
         }
     },
     methods: {
@@ -14,6 +16,16 @@ const app = Vue.createApp({
         },
         showContent() {
             this.show = !this.show
+        },
+        handlemouse(e, data) {
+            console.log(e, e.type)
+            if(data) {
+                console.log(data)
+            }
+        },
+        postionmouse(e) {
+            this.x = e.offsetX;
+            this.y = e.offsetY;
         }
     }
   });
