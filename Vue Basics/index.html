@@ -34,7 +34,13 @@
         <div class="box" @mouseleave="handlemouse">Mouse Leave</div>
         <div class="box" @dblclick="handlemouse">Double Click</div>
         <div class="box" @mousemove="postionmouse">Position - {{x}} {{y}}</div>
-     </div>
+        <ul>
+            <li v-for="item in books">
+                <h3>{{ item.title }}</h3>
+                <p>{{ item.author }}</p>
+            </li>
+        </ul>
+    </div>
     <script src="app.js"></scrip>
 </body>
 </html>
