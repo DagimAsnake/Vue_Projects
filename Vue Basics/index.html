@@ -59,7 +59,7 @@
         <div class="box" @dblclick="handlemouse">Double Click</div>
         <div class="box" @mousemove="postionmouse">Position - {{x}} {{y}}</div>
         <ul>
-            <li v-for="item in books" :class="{fav: item.isFav}">
+            <li v-for="(item, index) in books" :key="index" :class="{fav: item.isFav}" @click="toggleFav(index)">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.author }}</p>
                 <img width="100" height="100" :src="item.img" :alt="item.title">
