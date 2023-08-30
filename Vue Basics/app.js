@@ -33,8 +33,13 @@ const app = Vue.createApp({
             this.x = e.offsetX;
             this.y = e.offsetY;
         },
-        toggleFav(index) {
-            this.books[index].isFav = !this.books[index].isFav;
+        toggleFav(item) {
+           item.isFav = !item.isFav;
+        }
+    },
+    computed: {
+        filteredBook() {
+            return this.books.filter(book => book.isFav)
         }
     }
   });
