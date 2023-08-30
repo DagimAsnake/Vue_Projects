@@ -18,6 +18,7 @@
 <body>
     <h1>Hello Vue</h1>
     <div id="app">
+        <h4><a :href="url">Portfolio</a></h4>
         <div v-if="show">
             <p>{{ title }} - {{ name }} - {{ age }}</p>
             <button v-on:click="title = 'Dog'">change title</button>
@@ -38,6 +39,7 @@
             <li v-for="item in books">
                 <h3>{{ item.title }}</h3>
                 <p>{{ item.author }}</p>
+                <img :src="item.img" :alt="item.title">
             </li>
         </ul>
     </div>

@@ -2,6 +2,7 @@ const app = Vue.createApp({
     // template: `<h2>This is Template</h2>`
     data() {
         return {
+            url: "https://dagimasnake.netlify.app",
             title: "Vue counter",
             name: "Dagim",
             age: 22,
@@ -9,9 +10,9 @@ const app = Vue.createApp({
             x: 0,
             y: 0,
             books: [
-                {title: "name of the wind", author: "patrick rothfuss"},
-                {title: "the way of kings", author: "brandon sanderson"},
-                {title: "the final empire", author: "brandon sanderson"}
+                {title: "name of the wind", author: "patrick rothfuss", img: "assets/1.png"},
+                {title: "the way of kings", author: "brandon sanderson", img: "assets/2.png"},
+                {title: "the final empire", author: "brandon sanderson", img: "assets/3.png"}
             ]
         }
     },
