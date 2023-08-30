@@ -10,9 +10,9 @@ const app = Vue.createApp({
             x: 0,
             y: 0,
             books: [
-                {title: "name of the wind", author: "patrick rothfuss", img: "assets/1.png"},
-                {title: "the way of kings", author: "brandon sanderson", img: "assets/2.png"},
-                {title: "the final empire", author: "brandon sanderson", img: "assets/3.png"}
+                {title: "name of the wind", author: "patrick rothfuss", img: "assets/1.png", isFav: true},
+                {title: "the way of kings", author: "brandon sanderson", img: "assets/2.png", isFav: false},
+                {title: "the final empire", author: "brandon sanderson", img: "assets/3.png", isFav: true}
             ]
         }
     },
