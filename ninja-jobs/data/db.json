@@ -1,0 +1,7 @@
+{
+    "jobs": [
+        {"title": "Web Developer", "id": 1, "details": "lorem"},
+        {"title": "Mobile Developer", "id": 2, "details": "lorem"},
+        {"title": "Hardware Engineer", "id": 3, "details": "lorem"}
+    ]
+}
